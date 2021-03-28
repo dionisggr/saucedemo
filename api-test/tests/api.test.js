@@ -41,7 +41,7 @@ describe('The Sauce Demo API', () => {
         });
     });
 
-    it('PATCH /posts responds with 201 status and the edited post object.', () => {
+    it('PATCH /posts responds with 200 status and the edited post object.', () => {
       const { id } = postToPatch;
 
       return supertest(baseUrl)
@@ -57,7 +57,7 @@ describe('The Sauce Demo API', () => {
         });
     });
 
-    it('DELETE /api/users/:userID responds with 301 status.', () => {
+    it('DELETE /api/users/:userID responds with 200 status.', () => {
       return supertest(baseUrl)
         .delete('/posts/1')
         .expect(200);
