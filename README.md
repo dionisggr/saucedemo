@@ -99,6 +99,7 @@ The test functionality includes:
   * actions.js
 
 Notes: There does not seem to be a generally approved standard for directory structure in tests, and is more dependent on the team's choice. For this reason, I found it more convenient to keep a `When/Given/Then` structure for scalability purposes.
+
 ---
 
 ### API Structure
@@ -120,12 +121,17 @@ Use the package manager `npm` to install dependencies:
 npm install
 ```
 
-Run the UI automation tests in parallel:
+Don't forget to audix fixes if needed:
+```
+npm audit fix
+```
+
+Run the UI automation tests in parallel (Chrome & Firefox):
 ```
 npx wdio wdio.conf.js
 ```
 
-Run the API automation tests with:
+Run the API automation tests:
 ```
 npm test
 ```
@@ -133,9 +139,9 @@ npm test
 ---
 
 ### Notes
-Tests run in instances of 5 for performance consideration in the user-end, when running tests.
+Tests run in instances of 5 for performance consideration in the user-end when running the tests.
 
-You may change the maximum instances 10 (maximum current test) or higher, as your machine allows.
+You may change the maximum instances 10 (maximum amount of tests) or higher, as your machine allows.
 
 In `wdio.conf.js`:
 ```
