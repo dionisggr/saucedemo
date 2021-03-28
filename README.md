@@ -129,3 +129,25 @@ Run the API automation tests with:
 ```
 npm test
 ```
+
+---
+
+### Notes
+Tests run in instances of 5 for performance consideration in the user-end, when running tests.
+
+You may change the maximum instances 10 (maximum current test) or higher, as your machine allows.
+
+In `wdio.conf.js`:
+```
+exclude: [
+    // 'path/to/excluded/files'
+  ]
+...
+
+maxInstances: 5   // Change to 10, or your preference
+
+...
+capabilities:[{
+  ...
+}]
+```
