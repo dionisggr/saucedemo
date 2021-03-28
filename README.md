@@ -1,4 +1,4 @@
-# Sauce Demo Website Automation
+# Sauce Demo Test Automation
 The following is a response to the Testing Assessment provided by Northwestern Mutual in March 23, 2021. It also served an additional purpose for learning more about automation and parallel testing, a basic understanding Selenium Webdriver, and a simple use of WebDriverIO and Cucumber.
 
 ---
