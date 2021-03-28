@@ -50,7 +50,7 @@ Mocha, Chai, Supertest, WebDriverIO, Cucumber
 ---
 
 ### Functionality
-The app's functionality includes:
+The test functionality includes:
 * UI
   * Login
     * User may login with registered credentials
@@ -80,23 +80,23 @@ The app's functionality includes:
   * __login.feature__
 * __step-definitions__
   * __cart__
-    * __given.js__
-    * __then.js__
-    * __when.js__
+    * given.js
+    * then.js
+    * when.js
   * __checkout__
-    * __then.js__
-    * __when.js__
+    * then.js
+    * when.js
   * __inventory__
-    * __then.js__
+    * then.js
   * __login__
-    * __given.js__
-    * __when.js__
+    * given.js
+    * when.js
   * __reusable__
-    * __given.js__
-    * __then.js__
-    * __when.js__
+    * given.js
+    * then.js
+    * when.js
 * __support__
-  * __actions.js__
+  * actions.js
 
 ---
 
