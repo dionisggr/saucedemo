@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "env NODE_ENV=test mocha --require test/setup.js --watchAll=false"
+    "test": "mocha --require api/test-setup.js api/tests/*.spec.js"
   },
   "keywords": [],
   "author": "",

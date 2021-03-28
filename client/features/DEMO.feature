@@ -33,7 +33,7 @@ Feature: DEMO: Navigation & Purchase
     When I remove an item from the cart
     Then the cart count shows 1
 
-  Scenario: As a logged user, I can another item to the cart
+  Scenario: As a logged user, I can add another item to the cart
     Given I am on the Products page
     When I add an item to the cart
     Then the cart count shows 2
