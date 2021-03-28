@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require api/test-setup.js api/tests/*.spec.js"
+    "test": "mocha --require api-test/test-setup.js api-test/tests/*.test.js"
   },
   "keywords": [],
   "author": "",
