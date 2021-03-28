@@ -19,7 +19,7 @@ exports.config = {
   // directory is where your package.json resides, so `wdio` will be called from there.
   //
   specs: [
-    './client/features/**/*.feature'
+    './ui-test/features/**/*.feature'
   ],
   // Patterns to exclude.
   exclude: [
@@ -144,9 +144,9 @@ exports.config = {
   cucumberOpts: {
     // <string[]> (file/dir) require files before executing features
     require: [
-      './client/step-definitions/**/given.js',
-      './client/step-definitions/**/when.js',
-      './client/step-definitions/**/then.js'
+      './ui-test/step-definitions/**/given.js',
+      './ui-test/step-definitions/**/when.js',
+      './ui-test/step-definitions/**/then.js'
     ],
     // <boolean> show full backtrace for errors
     backtrace: false,
