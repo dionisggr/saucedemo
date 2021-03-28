@@ -98,6 +98,7 @@ The test functionality includes:
 * __support__
   * actions.js
 
+Notes: There does not seem to be a generally approved standard for directory structure in tests, and is more dependent on the team's choice. For this reason, I found it more convenient to keep a `When/Given/Then` structure for scalability purposes.
 ---
 
 ### API Structure
@@ -128,5 +129,3 @@ Run the API automation tests with:
 ```
 npm test
 ```
-
----
