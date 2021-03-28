@@ -140,13 +140,11 @@ You may change the maximum instances 10 (maximum current test) or higher, as you
 In `wdio.conf.js`:
 ```
 exclude: [
-    // 'path/to/excluded/files'
-  ]
-...
+  // 'path/to/excluded/files'
+],
 
-maxInstances: 5   // Change to 10, or your preference
+maxInstances: 5,   // Change to 10, or your preference
 
-...
 capabilities:[{
   ...
 }]
