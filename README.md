@@ -104,7 +104,8 @@ Notes: There does not seem to be a generally approved standard for directory str
 
 ### API Structure
 * __api-test__
-  * __tests/api.test.js__
+  * __tests__
+    * __api.test.js__
 * __test-setup.js__
 
 ---
