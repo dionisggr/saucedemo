@@ -1,5 +1,5 @@
 # Sauce Demo Test Automation
-The following is a response to the Testing Assessment provided by Northwestern Mutual in March 23, 2021. It also served an additional purpose for learning more about automation and parallel testing, a basic understanding Selenium Webdriver, and a simple use of WebDriverIO and Cucumber.
+Automation and parallel testing practice after the learning and basic understanding of Selenium Webdriver, WebDriverIO and Cucumber.
 
 ---
 
@@ -22,25 +22,6 @@ The following is a response to the Testing Assessment provided by Northwestern M
   - Set the body for a request
   - Assert the response from a request
   - Use the response from one call in the request for another
-
----
-
-### Criteria
-* UI
-  * Does the code function properly and follow the workflow
-  * How are you selecting elements
-  * How are you waiting for elements to load
-  * Error Handling (Assertions, Logging, etc.)
-  * Code structure and design
-  * How modular is your code
-  * Neatness counts
-* API
-  * Are the requirements met
-  * Does the code function properly
-  * Are your assertions correct
-  * Code structure and design
-  * How modular is your code
-  * Neatness counts
 
 ---
 
@@ -72,31 +53,32 @@ The test functionality includes:
 ---
 
 ### UI Structure
-* __features__
-  * __cart.feature__
-  * __checkout.feature__
-  * __DEMO.feature__
-  * __inventory.feature__
-  * __login.feature__
-* __step-definitions__
-  * __cart__
-    * given.js
-    * then.js
-    * when.js
-  * __checkout__
-    * then.js
-    * when.js
-  * __inventory__
-    * then.js
-  * __login__
-    * given.js
-    * when.js
-  * __reusable__
-    * given.js
-    * then.js
-    * when.js
-* __support__
-  * actions.js
+* __ui-test__
+  * __features__
+    * __cart.feature__
+    * __checkout.feature__
+    * __DEMO.feature__
+    * __inventory.feature__
+    * __login.feature__
+  * __step-definitions__
+    * __cart__
+      * given.js
+      * then.js
+      * when.js
+    * __checkout__
+      * then.js
+      * when.js
+    * __inventory__
+      * then.js
+    * __login__
+      * given.js
+      * when.js
+    * __reusable__
+      * given.js
+      * then.js
+      * when.js
+  * __support__
+    * actions.js
 
 #### Notes:
 There does not seem to be a generally approved standard for directory structure in tests, and is more dependent on the team's choice. For this reason, I found it more convenient to keep a `When/Given/Then` structure for scalability purposes.
